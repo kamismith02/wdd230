@@ -77,12 +77,13 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2, .card h3, .info {
+.info {
     text-align: center;
 }
 
 h2, .card h3 {
-    font-family: 'Rock Salt'
+    font-family: 'Rock Salt';
+    text-align: center;
 }
 
 .card ul {
