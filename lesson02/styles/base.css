@@ -7,6 +7,13 @@ p {
     padding: 0;
 }
 
+header, footer {
+    background-color: #0a2e55;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
 /* Typography and Colors */
 body {
     font-family: 'Roboto', sans-serif;
@@ -14,7 +21,7 @@ body {
     color: #000000;
 }
 
-h2 {
+div h2 {
     color: #fff;
     background-color: #0a2e55;
     padding: 10px;
