@@ -7,7 +7,7 @@ header, main, footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: cadetblue;
+    background-color: rgb(142, 199, 201);
 }
 
 main {
