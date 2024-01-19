@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        /* Adjust font size for larger views */
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* Display links horizontally */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for larger views */
+        gap: 20px;
+        /* Adjust the gap between columns */
+        grid-template-areas: "heading heading"
+            "section1 section2";
+        /* Define grid areas for sections */
+    }
+
+    h2 {
+        grid-area: heading;
+        /* Place h2 in the 'heading' grid area */
+    }
+
+    .card:nth-child(even) {
+        grid-area: section1;
+        /* Place odd cards in the 'section1' grid area */
+    }
+
+    .card:nth-child(odd) {
+        grid-area: section2;
+        /* Place even cards in the 'section2' grid area */
+    }
+}
