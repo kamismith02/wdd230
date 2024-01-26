@@ -34,4 +34,14 @@
         grid-area: section2;
         /* Place even cards in the 'section2' grid area */
     }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 }
