@@ -10,14 +10,20 @@
         /* Two columns for larger views */
         gap: 20px;
         /* Adjust the gap between columns */
-        grid-template-areas: "heading heading"
-            "section1 section2";
+        grid-template-areas:
+                "heading heading"
+                "section1 section2"
+                "iframe iframe";
         /* Define grid areas for sections */
     }
 
     h2 {
         grid-area: heading;
         /* Place h2 in the 'heading' grid area */
+    }
+
+    section.map {
+        grid-area: iframe;
     }
 
     #menu {
