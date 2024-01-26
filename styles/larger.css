@@ -22,7 +22,7 @@
         /* Place h2 in the 'heading' grid area */
     }
 
-    section.map {
+    div.map {
         grid-area: iframe;
     }
 
