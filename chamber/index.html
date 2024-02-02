@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kami Smith - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development course assignment chamber project.">
+    <meta name="author" content="Kami Smith">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Kami Smith">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://gentledentalarts.blob.core.windows.net/content/images/Blog/All-About-Orem-UT.jpg">
+    <meta property="og:url" content="https://kamismith02.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="title">Tooele Chamber</h1>
+        </div>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <div class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Members</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Tooele County Views">
+            <h2>Tooele County Chamber & Tourism</h2>
+            <article>
+                <p>A place you can call home.</p>
+            </article>
+        </div>
+    
+        <section class="call-to-action">
+            <h2>Join Us!</h2>
+            <!-- Call to action content goes here -->
+        </section>
+    
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <!-- Current events content goes here -->
+        </section>
+    
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <!-- Weather card content goes here -->
+        </section>
+    
+        <section class="company-spotlights">
+            <h2>Our Sponsors</h2>
+            <h3>Company 1</h3>
+            <p>About company 1</p>
+            <h3>Company 2</h3>
+            <p>About company 2</p>
+            <h3>Company 3</h3>
+            <p>About company 3</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>Phone number</p>
+                <p>Email</p>
+                <p>Address</p>
+            </div>
+            <div class="development-info">
+                <p>&copy; <span id="currentYear"></span> | Kami Smith | WDD 230 Project</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
