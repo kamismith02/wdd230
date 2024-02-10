@@ -175,7 +175,7 @@ a {
 
 .call-to-action button {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -194,7 +194,7 @@ a {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: #fff;
     z-index: 9999;
     /* Ensure toggle is above other content */
 }
