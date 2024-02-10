@@ -47,11 +47,6 @@ main {
     text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .call-to-action,
 .current-events,
 .weather-card,
@@ -71,9 +66,10 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    text-align: center;
     /* Adjust the gap as needed */
 }
 
@@ -83,13 +79,13 @@ footer p {
 }
 
 .contact-info,
-.development-info {
+.class-info {
     width: 100%;
     /* Each div takes full width within its column */
 }
 
 .contact-info p,
-.development-info p {
+.class-info p {
     margin: 0;
 }
 
@@ -143,6 +139,7 @@ footer p {
 /* Add more specific styling for your sections as needed */
 .hero {
     position: relative;
+    margin-top: -20px;
 }
 
 .hero img {
@@ -153,7 +150,7 @@ footer p {
 
 .hero h2 {
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -163,13 +160,17 @@ footer p {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     color: #ffffff;
     background-color: #4d4d5edd;
     width: 35%;
     text-align: center;
     font-size: 22px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .call-to-action button {
@@ -183,4 +184,37 @@ footer p {
 
 .call-to-action button:hover {
     background-color: var(--accent-color);
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    /* Adjusted position to not interfere with hamburger menu */
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    z-index: 9999;
+    /* Ensure toggle is above other content */
+}
+
+.dark-mode-toggle:focus {
+    outline: none;
+    /* Remove focus outline */
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .call-to-action,
+.dark-mode .current-events,
+.dark-mode .weather-card,
+.dark-mode .company-spotlights {
+    background-color: #222;
+    /* Adjusted background color for sections */
+    color: #fff;
+    /* Adjusted text color for sections */
 }
