@@ -11,10 +11,18 @@
         gap: 20px;
         /* Adjust the gap between columns */
         grid-template-areas:
-                "heading heading"
-                "section1 section2"
-                "iframe iframe";
+            "hero hero"
+            "heading heading"
+            "section1 section2"
+            "iframe iframe";
         /* Define grid areas for sections */
+    }
+
+    .temple-label {
+        top: 20px;
+        /* Adjust as needed */
+        left: 20px;
+        /* Adjust as needed */
     }
 
     h2 {
@@ -26,11 +34,6 @@
         grid-area: iframe;
     }
 
-    #menu {
-        display: none;
-        /* hide hamburger button */
-    }
-
     .navigation {
         flex-direction: row;
     }
@@ -38,5 +41,22 @@
     .navigation a {
         display: block;
         flex: 1 1 100%;
+    }
+
+    /* Adjustments for hero image */
+    .hero-container {
+        grid-area: hero;
+        /* Place the picture element in the 'hero' grid area */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        /* Ensure the hero image doesn't overflow its container */
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
     }
 }
