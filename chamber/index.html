@@ -12,7 +12,7 @@
     <meta property="og:image"
         content="https://gentledentalarts.blob.core.windows.net/content/images/Blog/All-About-Orem-UT.jpg">
     <meta property="og:url" content="https://kamismith02.github.io/wdd230/">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.webp">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -37,7 +37,11 @@
     
     <main>
         <div class="hero">
-            <img src="images/hero.jpg" alt="Tooele County Views">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1023px)" srcset="images/hero-medium.webp">
+                <img src="images/wdd230-org.jpg" alt="Tooele County View" width="1280" height="853">
+            </picture>
             <h2>Tooele County Chamber & Tourism</h2>
             <article>
                 <p>A place you can call home.</p>
@@ -58,9 +62,10 @@
     
         <section class="weather-card">
             <h2>Weather</h2>
-            <p>⛅ Partly Cloudy - 45°</p>
+            <p>Temperature: <span id="temperature">45</span>°</p>
+            <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
             <p>Humidity: 20%</p>
-            <p>Wind Chill: N/A</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
         </section>
     
         <section class="company-spotlights">
@@ -100,5 +105,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
