@@ -11,10 +11,10 @@ header {
     padding: 10px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Rock Salt', cursive;
-    /* Apply 'Rock Salt' font */
 }
 
 header img {
@@ -24,12 +24,11 @@ header img {
     border-radius: 70%;
     overflow: hidden;
     margin-right: 10px;
-    /* Add some space between the image and the name */
+    margin-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    /* Remove default margin for h1 */
 }
 
 main {
@@ -146,4 +145,8 @@ iframe {
     padding: 10px;
     width: 100%;
     height: 400px;
+}
+
+.map iframe {
+    border: 0;
 }

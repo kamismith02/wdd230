@@ -28,8 +28,8 @@
     <button id="mode" class="dark-mode-toggle">🌛</button>
     <nav>
         <div class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">Discover</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
             <a href="#">Directory</a>
             <a href="#">Join</a>
         </div>
@@ -62,9 +62,14 @@
     
         <section class="weather-card">
             <h2>Weather</h2>
-            <p>Temperature: <span id="temperature">45</span>°</p>
-            <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
-            <p>Humidity: 20%</p>
+            <label for="temperatureInput">Temperature (°F):</label>
+            <input type="number" id="temperatureInput">
+            <br>
+            <label for="windSpeedInput">Wind Speed (mph):</label>
+            <input type="number" id="windSpeedInput">
+            <br>
+            <button id="calculateButton">Calculate Wind Chill</button>
+            <br>
             <p>Wind Chill: <span id="windChill">N/A</span></p>
         </section>
     

@@ -24,7 +24,7 @@ header {
 
 #title {
     color: white;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 h1,
@@ -44,7 +44,6 @@ h3 {
 
 main {
     padding: 20px 0;
-    padding-bottom: 150px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -67,25 +66,24 @@ footer {
     background-color: var(--primary-color);
     color: #fff;
     padding: 20px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    /* Adjust the gap as needed */
+
 }
 
 footer p {
     padding: 2px;
-    /* Adjust the value as needed for spacing */
+
 }
 
 .contact-info,
 .class-info {
     width: 100%;
-    /* Each div takes full width within its column */
 }
 
 .contact-info p,
@@ -135,12 +133,10 @@ footer p {
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
 }
 
-/* Add more specific styling for your sections as needed */
 .hero {
     position: relative;
     margin-top: -20px;
@@ -205,7 +201,10 @@ a {
 
 .dark-mode-toggle:focus {
     outline: none;
-    /* Remove focus outline */
+}
+
+.weather-card input {
+    margin-bottom: 15px;
 }
 
 .dark-mode {
@@ -218,7 +217,65 @@ a {
 .dark-mode .weather-card,
 .dark-mode .company-spotlights {
     background-color: #222;
-    /* Adjusted background color for sections */
     color: #fff;
-    /* Adjusted text color for sections */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+}
+
+.main {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--accent-color);
+    color: #000000;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sidebar-section h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-section {
+    flex-grow: 1;
+    /* Allow sections to grow and fill available space */
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.gallery {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.gallery img:hover {
+    transform: none;
+    transition: none;
 }

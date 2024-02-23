@@ -1,53 +1,88 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #menu {
-            display: none;
-            /* hide hamburger button */
-        }
-    
-        .navigation {
-            flex-direction: row;
-        }
-    
-        .navigation a {
-            display: block;
-            flex: 1 1 100%;
-        }
+        display: none;
+    }
 
-        main {
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 columns in medium view */
-        }
+    .navigation {
+        flex-direction: row;
+    }
 
-        .hero,
-        .call-to-action,
-        .company-spotlights {
-            grid-column: span 2;
-            /* Full width for these sections */
-        }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 
-        .current-events,
-        .weather-card {
-            grid-column: span 1;
-            /* Half width for these sections */
-        }
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns in medium view */
+    }
 
-                .company-spotlights {
-                    display: flex;
-                    flex-wrap: wrap;
-                    /* Enable wrapping for multiple rows */
-                    justify-content: space-between;
-                    /* Adjust as needed */
-                }
-        
-                h2 {
-                    width: 100%;
-                    /* Ensure h2 spans full width */
-                }
-        
-                .company-spotlights>div {
-                    flex: 1 0 31%;
-                    /* Each div takes 48% of the width with some spacing */
-                    margin: 1%;
-                    /* Add some margin for spacing */
-                }
+    .hero,
+    .call-to-action,
+    .company-spotlights {
+        grid-column: span 2;
+        /* Full width for these sections */
+    }
+
+    .current-events,
+    .weather-card {
+        grid-column: span 1;
+        /* Half width for these sections */
+    }
+
+    .company-spotlights {
+        display: flex;
+        flex-wrap: wrap;
+        /* Enable wrapping for multiple rows */
+        justify-content: space-between;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    .company-spotlights>div {
+        flex: 1 0 31%;
+        /* Each div takes 48% of the width with some spacing */
+        margin: 1%;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .main {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--accent-color);
+        color: #000000;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .sidebar-section {
+        flex-grow: 1;
+        /* Allow sections to grow and fill available space */
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+    }
 }

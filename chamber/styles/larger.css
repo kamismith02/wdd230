@@ -1,12 +1,10 @@
 @media screen and (min-width: 1023px) {
     body {
         font-size: 16px;
-        /* Adjust font size for larger views */
     }
 
     #menu {
         display: none;
-        /* hide hamburger button */
     }
 
     .navigation {
@@ -20,22 +18,17 @@
 
     .hero h2 {
         left: 20px;
-        /* Adjust the left position for larger views */
         width: auto;
-        /* Allow the width to be auto for larger views */
         transform: translate(0, -50%);
-        /* Adjust the transform for larger views */
         font-size: xx-large;
     }
 
     main {
         grid-template-columns: repeat(2, 1fr);
-        /* 2x2 grid layout */
     }
 
     .hero {
         grid-column: span 2;
-        /* Full width for hero in larger view */
     }
 
     .company-spotlights {
@@ -45,13 +38,50 @@
 
     h2 {
         width: 100%;
-        /* Ensure h2 spans full width */
     }
 
     .company-spotlights>div {
         flex: 1 0 48%;
         /* Each div takes 48% of the width with some spacing */
         margin: 1%;
-        /* Add some margin for spacing */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .main {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--accent-color);
+        color: #000000;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .sidebar-section {
+        flex-grow: 1;
+        /* Allow sections to grow and fill available space */
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
     }
 }

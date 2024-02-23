@@ -36,6 +36,7 @@
         <div class="hero-container">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 675px)" srcset="images/hero-medium.webp">
                 <img src="images/hero-large.webp" alt="San Diego Temple" width="960" height="447">
             </picture>
             <div class="temple-label">San Diego Temple</div>
@@ -62,12 +63,12 @@
             <ul class="info">
                 <li>Orem, Utah</li>
                 <li>Current Temperature: </li>
-                <li>Page Visits: </li>
+                <li>Page Visits: <span id="pageVisitsCounter">0</span></li>
             </ul>
         </section>
         <div class="map"><iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40940.71750402764!2d-111.73764992029523!3d40.299357001291526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7804e4b45119%3A0x642bc3cf90b21ed1!2sOrem%2C%20UT!5e0!3m2!1sen!2sus!4v1706246513523!5m2!1sen!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="Google Map of Orem, UT"></iframe>
         </div>
     </main>
@@ -77,6 +78,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/page-visits.js"></script>
 </body>
 
 </html>
