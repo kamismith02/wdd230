@@ -287,14 +287,15 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    color: #fff;
-    background-color: var(--accent-color);
+    color: #000;
+    background-color: rgba(128, 127, 191, 0.25);
     border-radius: 10px;
 }
 
-form legend {
-    padding-top: 20px;
+form h1 {
     font-size: xx-large;
+    color: var(--primary-color);
+    margin: 5px;
 }
 
 form div {
@@ -322,7 +323,7 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: var(--secondary-color);
+    background-color: rgb(110, 108, 190);
     color: #fff;
     border-color: #fff;
     border-radius: 5px;
