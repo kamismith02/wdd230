@@ -1,21 +1,17 @@
 @media screen and (min-width: 768px) {
     body {
         font-size: 16px;
-        /* Adjust font size for larger views */
     }
 
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns for larger views */
         gap: 20px;
-        /* Adjust the gap between columns */
         grid-template-areas:
             "hero hero"
             "heading heading"
             "section1 section2"
             "iframe iframe";
-        /* Define grid areas for sections */
     }
 
     .temple-label {
@@ -25,7 +21,6 @@
 
     h2 {
         grid-area: heading;
-        /* Place h2 in the 'heading' grid area */
     }
 
     div.map {
@@ -41,20 +36,21 @@
         flex: 1 1 100%;
     }
 
-    /* Adjustments for hero image */
     .hero-container {
         grid-area: hero;
-        /* Place the picture element in the 'hero' grid area */
     }
 
     img {
         max-width: 100%;
         height: auto;
-        /* Ensure the hero image doesn't overflow its container */
     }
 
     #menu {
         display: none;
-        /* hide hamburger button */
+
+    }
+
+    .form-page-main {
+        display: block;
     }
 }
