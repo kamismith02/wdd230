@@ -33,35 +33,27 @@ header h1 {
 
 main {
     max-width: 800px;
-    /* Adjust the width as needed */
     margin: 20px auto;
 }
 
-/* Add styles for the hero container and temple label */
 .hero-container {
     position: relative;
-    /* Ensure relative positioning for absolute child */
 }
 
 .temple-label {
     position: absolute;
     top: 10px;
-    /* Adjust as needed */
     left: 10px;
-    /* Adjust as needed */
     background-color: rgba(255, 255, 255, 0.8);
-    /* Semi-transparent white background */
     padding: 5px 10px;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     white-space: nowrap;
-    /* Prevent text wrapping */
 }
 
 .card {
     width: 100%;
-    /* Full width of the container */
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff;
@@ -138,7 +130,7 @@ footer {
 
 .active::before, .active::after {
     content: "🦋";
-    /* just a wayfinding symbol for the user */
+    /* wayfinding symbol  */
 }
 
 iframe {
