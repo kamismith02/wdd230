@@ -1,0 +1,31 @@
+/* prophets.css */
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+section {
+    background-color: #212663;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #212663;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
