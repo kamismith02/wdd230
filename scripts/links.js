@@ -5,21 +5,23 @@ async function getLinks() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
-        displayLinks(data);
+        displayLinks(data.lessons);
     } catch (error) {
         console.error('Error fetching links:', error);
     }
 }
 
-function displayLinks(weeks) {
+function displayLinks(lessons) {
     const listContainer = document.querySelector('.learning-activities ul');
 
-    weeks.forEach(week => {
+    lessons.forEach(lesson => {
+        const lessonNumber = lesson.lesson.padStart(2, '0');
+        const lessonLinks = lesson.links.map(link => `<a href="${link.url}">${link.title}</a>`).join(' | ');
         const listItem = document.createElement('li');
-        const lessonNumber = week.lesson.padStart(2, '0');
-        listItem.innerHTML = `<a href="${baseURL}${week.links[0].url}">${lessonNumber}: ${week.links[0].title}</a>`;
+        listItem.innerHTML = `Week ${lessonNumber}: ${lessonLinks}`;
         listContainer.appendChild(listItem);
     });
 }
+
 
 getLinks();
