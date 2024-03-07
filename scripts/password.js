@@ -4,7 +4,6 @@ const message = document.querySelector("#formmessage");
 
 kp2.addEventListener("focusout", checkSame);
 
-// This should be refactored.
 function checkSame() {
     if (kp1.value !== kp2.value) {
         message.textContent = "❗Passwords must match!";
