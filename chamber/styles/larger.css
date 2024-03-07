@@ -101,4 +101,54 @@
     .thank-you {
         display: block;
     }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    .toggle-view {
+        text-align: center;
+        grid-column: 1 / -1;
+        /* Span across all columns */
+    }
+
+    #members-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        grid-column: 1 / -1;
+        /* Span across all columns */
+    }
+
+    .member-card {
+        display: flex;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .company-image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .member-info {
+        flex: 1;
+        padding-left: 20px;
+    }
+
+    .company-image {
+        max-width: 250px;
+        max-height: 100%;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: auto;
+        display: block;
+    }
 }

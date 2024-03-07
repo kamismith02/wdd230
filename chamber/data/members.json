@@ -1,34 +1,34 @@
 [
     {
         "name": "ABC Company",
-        "address": "123 Main Street, City, State, ZIP",
+        "address": "123 Main Street, Tooele, Utah, 84074",
         "phone": "(123) 456-7890",
         "website": "https://www.abc.com",
-        "image": "abc-logo.png",
+        "image": "abc-logo.webp",
         "membershipLevel": "Gold",
         "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "name": "XYZ Corporation",
-        "address": "456 Elm Street, City, State, ZIP",
+        "address": "456 Elm Street, Tooele, Utah, 84074",
         "phone": "(987) 654-3210",
         "website": "https://www.xyzcorp.com",
-        "image": "xyz-logo.png",
+        "image": "xyz-logo.webp",
         "membershipLevel": "Silver",
         "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "name": "123 Industries",
-        "address": "789 Oak Street, City, State, ZIP",
+        "address": "789 Oak Street, Tooele, Utah, 84074",
         "phone": "(555) 123-4567",
         "website": "https://www.123industries.com",
-        "image": "123-logo.png",
+        "image": "123-logo.webp",
         "membershipLevel": "Bronze",
         "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
         "name": "Smith & Co",
-        "address": "987 Pine Street, City, State, ZIP",
+        "address": "987 Pine Street, Tooele, Utah, 84074",
         "phone": "(111) 222-3333",
         "website": "https://www.smithco.com",
         "image": "smith-logo.webp",
@@ -37,25 +37,25 @@
     },
     {
         "name": "Tech Solutions Inc.",
-        "address": "321 Cedar Street, City, State, ZIP",
+        "address": "321 Cedar Street, Tooele, Utah, 84074",
         "phone": "(444) 555-6666",
         "website": "https://www.techsolutions.com",
-        "image": "tech-logo.png",
+        "image": "tech-logo.webp",
         "membershipLevel": "Platinum",
         "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         "name": "Sunrise Enterprises",
-        "address": "654 Walnut Street, City, State, ZIP",
+        "address": "654 Walnut Street, Tooele, Utah, 84074",
         "phone": "(777) 888-9999",
         "website": "https://www.sunriseent.com",
-        "image": "sunrise-logo.png",
+        "image": "sunrise-logo.webp",
         "membershipLevel": "Silver",
         "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "name": "Moonlight Ventures",
-        "address": "852 Birch Street, City, State, ZIP",
+        "address": "852 Birch Street, Tooele, Utah, 84074",
         "phone": "(222) 333-4444",
         "website": "https://www.moonlightventures.com",
         "image": "moonlight-logo.webp",
