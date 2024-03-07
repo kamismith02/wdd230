@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kami Smith - WDD 230 - Chamber of Commerce</title>
-    <meta name="description" content="Kami Smith's course assignment chamber project.">
+    <title>Kami Smith - WDD 230 - Chamber of Commerce Directory</title>
+    <meta name="description" content="Kami Smith's course assignment chamber project directory page.">
     <meta name="author" content="Kami Smith">
     <meta property="og:title" content="Kami Smith">
     <meta property="og:type" content="website">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+</head>
 </head>
 
 <body>
@@ -31,18 +33,22 @@
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html" class="active">Join</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
         </div>
     </nav>
 
-    <main class="thank-you">
-        <h1>Welcome to the Tooele County Chamber!</h1>
-        <h3>Form Submitted Successfully!</h3>
-        <p>We will process your information and send you an email to confirm your chamber status as soon as possible.</p>
+    <main>
+        <div class="toggle-view">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="members-container" class="grid-view">
+            <!-- Member cards or list items will be dynamically added here -->
+        </div>
     </main>
 
-    <footer class="thank-you-footer">
+    <footer>
         <div class="contact-info">
             <p>(435)-123-4567</p>
             <p>support@tooelechamber.org</p>
@@ -56,6 +62,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>

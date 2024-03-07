@@ -369,3 +369,8 @@ form button:focus {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.company-image {
+    width: 30%;
+    max-width: 100%;
+}
