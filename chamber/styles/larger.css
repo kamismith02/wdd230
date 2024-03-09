@@ -42,7 +42,6 @@
 
     .company-spotlights>div {
         flex: 1 0 48%;
-        /* Each div takes 48% of the width with some spacing */
         margin: 1%;
     }
 
@@ -77,7 +76,6 @@
 
     .sidebar-section {
         flex-grow: 1;
-        /* Allow sections to grow and fill available space */
         background-color: rgba(255, 255, 255, 0.75);
         padding: 10px;
         border-radius: 6px;
@@ -112,7 +110,6 @@
     .toggle-view {
         text-align: center;
         grid-column: 1 / -1;
-        /* Span across all columns */
     }
 
     #members-container {
@@ -120,7 +117,6 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
         grid-column: 1 / -1;
-        /* Span across all columns */
     }
 
     .member-card {

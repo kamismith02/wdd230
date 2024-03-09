@@ -318,7 +318,7 @@ form textarea {
     border-radius: 5px;
     font-size: 16px;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
 }
 
 form button,
@@ -345,7 +345,7 @@ form button:focus {
 
 .membership-benefits {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
 }
 
