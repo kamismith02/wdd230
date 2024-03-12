@@ -30,8 +30,6 @@ function displayResults(data) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
 }
-
-// Function to capitalize each word of a string
 function capitalizeEachWord(str) {
     return str.replace(/\b\w/g, char => char.toUpperCase());
 }
