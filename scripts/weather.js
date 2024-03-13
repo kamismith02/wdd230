@@ -17,7 +17,7 @@ fetch(apiUrl)
         document.getElementById('weather-icon').src = iconsrc;
 
         document.getElementById('weather-details').textContent = weatherDetails;
-        document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${iconCode}.png`;
+        document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${iconCode}.png`;
     })
     .catch(error => {
         console.error('Error fetching weather data:', error);
