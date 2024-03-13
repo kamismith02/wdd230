@@ -174,10 +174,6 @@ a {
     text-decoration: none;
 }
 
-.call-to-action a:visited {
-    color: #000;
-}
-
 .call-to-action button {
     padding: 10px 20px;
         background-color: rgb(110, 108, 190);
@@ -190,10 +186,6 @@ a {
         width: 30%;
         margin-bottom: 15px;
         margin-top: 10px;
-}
-
-.call-to-action button:hover {
-    background-color: var(--accent-color);
 }
 
 /* dark mode */
