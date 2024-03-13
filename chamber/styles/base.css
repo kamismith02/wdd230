@@ -174,6 +174,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #000;
+}
+
 .call-to-action button {
     background-color: var(--secondary-color);
     color: #000;
@@ -181,23 +185,23 @@ a {
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .call-to-action button:hover {
     background-color: var(--accent-color);
 }
 
+/* dark mode */
 .dark-mode-toggle {
     position: absolute;
     top: 1rem;
     right: 3rem;
-    /* Adjusted position to not interfere with hamburger menu */
     font-size: 1.5rem;
     border: 0;
     background: none;
     color: #fff;
     z-index: 9999;
-    /* Ensure toggle is above other content */
 }
 
 .dark-mode-toggle:focus {
@@ -221,6 +225,7 @@ a {
     color: #fff;
 }
 
+/* discover page */ 
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -372,6 +377,8 @@ form button:focus {
     padding-right: 15px;
 }
 
+
+/* directory page */
 .member-card {
     background-color: #f9f9f9;
     padding: 20px;
@@ -465,6 +472,8 @@ a {
     color: var(--primary-color);
 }
 
+
+/* weather info */ 
 .weather-info {
     padding: 20px;
     border-radius: 8px;
@@ -480,31 +489,35 @@ a {
 .weather-info li {
     list-style: none;
     padding: 5px;
+    margin-left: -40px;
 }
 
+
+/* banner info */
 .banner {
     position: relative;
     background-color: var(--accent-color);
     color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr auto;
+    padding: 15px;
+    /* Increase padding */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Increase shadow effect */
+    display: flex;
     align-items: center;
 }
 
 .banner p {
     font-size: 1.2rem;
+    margin: 0;
+    flex: 1;
+    padding-right: 10px;
     text-align: center;
+    color: #000;
 }
 
 .banner button {
-    padding: 5px 10px;
-    background-color: #fff;
-    color: var(--accent-color);
+    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    justify-self: end;
+    background-color: var(--accent-color);
 }

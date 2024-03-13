@@ -2,8 +2,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Tooele&appid=74a0ec99be
     .then(response => response.json())
     .then(data => {
         const currentTemperature = data.main.temp;
-        const weatherDescription = data.weather[0].description;
-        // Display current temperature and weather description on your website
+        const weatherDescription = capitalizeEachWord(data.weather[0].description);
+
         document.getElementById('currentTemperature').textContent = currentTemperature + "°F";
         document.getElementById('weatherDescription').textContent = weatherDescription;
     })
@@ -11,17 +11,28 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Tooele&appid=74a0ec99be
 
 // Fetch three-day forecast data
 fetch('https://api.openweathermap.org/data/2.5/forecast?q=Tooele&appid=74a0ec99bed0ffa4e9a88ae81d66c579&units=imperial')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => {
-        // Assuming data contains forecast information in the required format
-        // Display three-day temperature forecast on your website
-        const forecast = data.list.slice(0, 8 * 3); // Assuming data is provided for every 3 hours
-        forecast.forEach((item, index) => {
-            const date = new Date(item.dt * 1000); // Convert Unix timestamp to JavaScript Date object
+        const forecast = data.list.slice(0, 8 * 3);
+        let forecastData = [];
+        for (let i = 0; i < forecast.length; i += 8) {
+            const item = forecast[i];
+            const date = new Date(item.dt * 1000);
             const temperature = item.main.temp;
-            // Display temperature and date for each forecast item
-            document.getElementById(`day${index + 1}`).textContent = date.toDateString();
-            document.getElementById(`temperature${index + 1}`).textContent = temperature + "°F";
+            forecastData.push({ date, temperature });
+        }
+        forecastData.forEach((item, index) => {
+            document.getElementById(`day${index + 1}`).textContent = item.date.toDateString();
+            document.getElementById(`temperature${index + 1}`).textContent = item.temperature + "°F";
         });
     })
     .catch(error => console.error('Error fetching forecast data:', error));
+
+function capitalizeEachWord(str) {
+    return str.replace(/\b\w/g, char => char.toUpperCase());
+}
