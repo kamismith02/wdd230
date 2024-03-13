@@ -3,7 +3,7 @@ const apiKey = '74a0ec99bed0ffa4e9a88ae81d66c579';
 const city = 'Orem';
 const countryCode = 'US';
 
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${apiKey}&units=imperial`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${apiKey}&units=imperial`;
 
 fetch(apiUrl)
     .then(response => response.json())
