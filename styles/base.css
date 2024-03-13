@@ -65,6 +65,10 @@ main {
     text-align: center;
 }
 
+.info li {
+    margin-left: -40px;
+}
+
 h2, .card h3 {
     font-family: 'Rock Salt';
     text-align: center;
@@ -123,7 +127,6 @@ footer {
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
 }
