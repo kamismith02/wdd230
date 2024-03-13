@@ -147,4 +147,52 @@
         margin: auto;
         display: block;
     }
+
+    .list-view #members-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-view .member-card {
+        flex: 0 0 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 15px;
+    }
+
+    .list-view th:nth-child(1),
+    .list-view td:nth-child(1) {
+        width: 20%;
+    }
+    
+    .list-view th:nth-child(2),
+    .list-view td:nth-child(2) {
+        width: 30%;
+    }
+
+    .list-view th:nth-child(3),
+    .list-view td:nth-child(3) {
+        width: 15%;
+    }
+
+    .list-view th:nth-child(4),
+    .list-view td:nth-child(4) {
+        width: 10%;
+    }
+
+    .list-view th:nth-child(5),
+    .list-view td:nth-child(5) {
+        width: 12%;
+    }
+
+    .list-view th {
+        display: inline-block;
+    }
 }
