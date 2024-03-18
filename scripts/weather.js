@@ -8,7 +8,7 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${coun
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-        const temperature = data.main.temp;
+        const temperature = Math.round(data.main.temp);
         const description = capitalizeEachWord(data.weather[0].description);
         const iconCode = data.weather[0].icon;
         const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
