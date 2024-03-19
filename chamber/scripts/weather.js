@@ -1,7 +1,7 @@
 fetch('https://api.openweathermap.org/data/2.5/weather?q=Tooele&appid=74a0ec99bed0ffa4e9a88ae81d66c579&units=imperial')
     .then(response => response.json())
     .then(data => {
-        const currentTemperature = data.main.temp;
+        const currentTemperature = Math.round(data.main.temp);
         const weatherDescription = capitalizeEachWord(data.weather[0].description);
 
         document.getElementById('currentTemperature').textContent = currentTemperature + "°F";
@@ -23,7 +23,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=Tooele&appid=74a0ec99b
         for (let i = 0; i < forecast.length; i += 8) {
             const item = forecast[i];
             const date = new Date(item.dt * 1000);
-            const temperature = item.main.temp;
+            const temperature = Math.round(item.main.temp);
             forecastData.push({ date, temperature });
         }
         forecastData.forEach((item, index) => {
