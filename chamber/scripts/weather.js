@@ -3,9 +3,17 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Tooele&appid=74a0ec99be
     .then(data => {
         const currentTemperature = Math.round(data.main.temp);
         const weatherDescription = capitalizeEachWord(data.weather[0].description);
+        const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`; // Construct the weather icon URL
 
         document.getElementById('currentTemperature').textContent = currentTemperature + "°F";
         document.getElementById('weatherDescription').textContent = weatherDescription;
+
+        const weatherIconImg = document.createElement('img');
+        weatherIconImg.src = weatherIcon;
+        weatherIconImg.alt = weatherDescription;
+
+        const weatherInfoDiv = document.getElementById('weatherInfo');
+        weatherInfoDiv.insertBefore(weatherIconImg, weatherInfoDiv.childNodes[0]);
     })
     .catch(error => console.error('Error fetching weather data:', error));
 
