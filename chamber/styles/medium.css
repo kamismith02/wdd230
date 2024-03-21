@@ -42,6 +42,13 @@
         margin: 1%;
     }
 
+    .gallery {
+        width: 95%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
     .gallery img:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease;

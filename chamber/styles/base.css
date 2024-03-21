@@ -204,11 +204,8 @@ a {
     outline: none;
 }
 
-.weather-card input {
-    margin-bottom: 15px;
-}
-
-.dark-mode {
+.dark-mode,
+.dark-mode .directory {
     background-color: #000;
     color: #fff;
 }
@@ -216,7 +213,17 @@ a {
 .dark-mode .call-to-action,
 .dark-mode .current-events,
 .dark-mode .weather-card,
-.dark-mode .company-spotlights {
+.dark-mode .company-spotlights,
+.dark-mode .member-card,
+.dark-mode .list-view table tr:nth-child(odd),
+.dark-mode .membership-box,
+.dark-mode form input[type="text"],
+.dark-mode form input[type="email"],
+.dark-mode form input[type="tel"],
+.dark-mode form select,
+.dark-mode form textarea,
+.dark-mode form,
+.dark-mode .main {
     background-color: #222;
     color: #fff;
 }
@@ -230,7 +237,6 @@ a {
 
 .main {
     flex: 1;
-    background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -492,7 +498,7 @@ a {
 /* banner info */
 .banner {
     position: relative;
-    background-color: var(--accent-color);
+    background-color: rgb(218, 146, 153);
     color: #fff;
     padding: 15px;
     /* Increase padding */
@@ -515,5 +521,5 @@ a {
     font-size: 1.2rem;
     border: none;
     cursor: pointer;
-    background-color: var(--accent-color);
+    background-color: rgb(218, 146, 153);
 }
