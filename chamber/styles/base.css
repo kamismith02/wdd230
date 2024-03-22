@@ -381,7 +381,8 @@ form button:focus {
 
 
 /* directory page */
-.member-card {
+.member-card,
+.spotlight {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
