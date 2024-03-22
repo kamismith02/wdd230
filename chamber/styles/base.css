@@ -232,7 +232,8 @@ a {
 .dark-mode form select,
 .dark-mode form textarea,
 .dark-mode form,
-.dark-mode .main {
+.dark-mode .main,
+.dark-mode .spotlight {
     background-color: #222;
     color: #fff;
 }
