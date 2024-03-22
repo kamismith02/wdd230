@@ -51,6 +51,11 @@ main {
     text-align: center;
 }
 
+.index {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .call-to-action,
 .current-events,
 .weather-card,
@@ -132,6 +137,10 @@ footer p {
     background-color: #bbb;
     color: #333;
     font-weight: 700;
+}
+
+.navigation a.active {
+    text-decoration: underline;
 }
 
 .open a {
@@ -502,9 +511,6 @@ a {
     background-color: rgb(218, 146, 153);
     color: #fff;
     padding: 15px;
-    /* Increase padding */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    /* Increase shadow effect */
     display: flex;
     align-items: center;
 }
