@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kami Smith - WDD 230 - Scoots</title>
+    <meta name="description" content="Kami Smith's course assignment Scoots final project.">
+    <meta name="author" content="Kami Smith">
+    <meta property="og:title" content="Kami Smith">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://gentledentalarts.blob.core.windows.net/content/images/Blog/All-About-Orem-UT.jpg">
+    <meta property="og:url" content="https://kamismith02.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="title">SCOOTS</h1>
+            <button id="menu"></button>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html" class="active">Reservations</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <h2>Begin Your Adventure Today!</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="position">Title/Position:</label>
+            <input type="text" id="position" name="position" required pattern="[A-Za-z\-\s]{7,}"
+                title="Please enter at least 7 characters consisting of alphabetic characters, spaces, or hyphens">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="">Please Select</option>
+                <option value="NP Membership">NP Membership</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+
+            <label for="description">Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button type="submit">Join the Chamber!</button>
+        </form>
+
+        <div class="membership-benefits">
+            <div class="membership-box">
+                <h3>NP Membership</h3>
+                <p>NP Membership is designed for non-profit organizations. It offers basic benefits and does not include any
+                    membership fee.</p>
+            </div>
+            <div class="membership-box">
+                <h3>Bronze Membership</h3>
+                <p>Bronze Membership provides increased benefits at a modest cost. It includes access to special events,
+                    training sessions, and advertising opportunities.</p>
+            </div>
+            <div class="membership-box">
+                <h3>Silver Membership</h3>
+                <p>Silver Membership offers additional benefits compared to Bronze Membership. It includes event discounts,
+                    priority support, and enhanced advertising options.</p>
+            </div>
+            <div class="membership-box">
+                <h3>Gold Membership</h3>
+                <p>Gold Membership is our premium offering, providing exclusive features and benefits. It includes VIP access to
+                    events, personalized support, and top-tier advertising opportunities.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>(123)-456-7891</p>
+            <p>staff@scoots.com</p>
+            <p>123 N Main St, Cozumel, Q.R., Mexico</p>
+        </div>
+        <div class="class-info">
+            <p>&copy; <span id="currentYear"></span> | Kami Smith | WDD 230 Final Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+</body>
+
+</html>

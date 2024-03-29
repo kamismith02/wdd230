@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kami Smith - WDD 230 - Scoots</title>
+    <meta name="description" content="Kami Smith's course assignment Scoots final project.">
+    <meta name="author" content="Kami Smith">
+    <meta property="og:title" content="Kami Smith">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://gentledentalarts.blob.core.windows.net/content/images/Blog/All-About-Orem-UT.jpg">
+    <meta property="og:url" content="https://kamismith02.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="title">SCOOTS</h1>
+            <button id="menu"></button>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-us">
+            <h2>Our Contact Info:</h2>
+            <a href="https://maps.app.goo.gl/AwGVd13Hej9pkSq66">Centro Cozumel</a>
+            <a href="https://maps.app.goo.gl/sn64bAxdy6Rt7kC19"> Puerta Maya Cozumel</a>
+            <p>(123)-456-7891</p>
+            <p>staff@scoots.com</p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/?hl=en">Instagram @scootsss</a>
+            <a href="https://www.tiktok.com/en/">TikTok @scootsss</a>
+        </section>
+
+        <div class="map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.55059672075!2d-86.94981298861315!3d20.510831444630934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1711675596416!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            title="Centro Cozumel"></iframe>
+        </div>
+
+        <div class="map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3737.7073523678437!2d-86.97547448929743!3d20.477209557152143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTerminal%20Puerta%20Maya!5e0!3m2!1sen!2sus!4v1711675682235!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            title="Peurta Maya Cozumel"></iframe>
+        </div>
+
+        <form action="thankyou.html" method="get">
+            <h2>Want to Reach Out?</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+        
+            <label for="description">Comments or Concerns:</label>
+            <textarea id="description" name="description"></textarea>
+        
+            <input type="hidden" id="timestamp" name="timestamp">
+        
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>(123)-456-7891</p>
+            <p>staff@scoots.com</p>
+            <p>123 N Main St, Cozumel, Q.R., Mexico</p>
+        </div>
+        <div class="class-info">
+            <p>&copy; <span id="currentYear"></span> | Kami Smith | WDD 230 Final Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+</body>
+
+</html>

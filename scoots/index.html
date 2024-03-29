@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kami Smith - WDD 230 - Scoots</title>
+    <meta name="description" content="Kami Smith's course assignment Scoots final project.">
+    <meta name="author" content="Kami Smith">
+    <meta property="og:title" content="Kami Smith">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://gentledentalarts.blob.core.windows.net/content/images/Blog/All-About-Orem-UT.jpg">
+    <meta property="og:url" content="https://kamismith02.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div class="banner" id="banner">
+        <p>Today's Weather Highs: <span id="temp-max"></span></p>
+        <button onclick="closeBanner()">X</button>
+    </div>
+    <header>
+        <div>
+            <h1 id="title">SCOOTS</h1>
+            <button id="menu"></button>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="index">
+
+        <section class="call-to-action">
+            <h2>Make a reservation today!</h2>
+            <p>Choose from our large variety of rental choices for a fun filled adventure.</p>
+            <button id="joinButton">Reserve My Scooter</button>
+        </section>
+
+        <section class="rental-spotlights" id="rental-container">
+            <h2>Types of Rentals</h2>
+            <!-- Dynamic spotlight rentals will be inserted here -->
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <div class="weather-info" id="weatherInfo">
+                <p>Current Temperature: <span id="currentTemperature"></span></p>
+                <p>Current Humidity: <span id="weatherHumidity"></span></p>
+                <p>Tomorrow's Forecast: <span id="tomorrowForecast"></span></p>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <h2>Contact Info:</h2>
+            <a href="https://maps.app.goo.gl/AwGVd13Hej9pkSq66">Centro Cozumel</a>
+            <a href="https://maps.app.goo.gl/sn64bAxdy6Rt7kC19"> Puerta Maya Cozumel</a>
+            <p>(123)-456-7891</p>
+            <p>staff@scoots.com</p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/?hl=en">Instagram @scootsss</a>
+            <a href="https://www.tiktok.com/en/">TikTok @scootsss</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>(123)-456-7891</p>
+            <p>staff@scoots.com</p>
+            <p>123 N Main St, Cozumel, Q.R., Mexico</p>
+        </div>
+        <div class="class-info">
+            <p>&copy; <span id="currentYear"></span> | Kami Smith | WDD 230 Final Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlights.js"></script>
+</body>
+
+</html>
