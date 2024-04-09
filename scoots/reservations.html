@@ -22,6 +22,7 @@
     <header>
         <div>
             <h1>🛵 SCOOTS 🛵</h1>
+            <h2>MAKE A RESERVATION</h2>
             <button id="menu"></button>
         </div>
     </header>
@@ -34,7 +35,36 @@
         </div>
     </nav>
 
-    <main>
+    <main class="reservations">
+        <div class="reservation-info">
+            <div class="reservation-box">
+                <h2>Types of Rentals</h2>
+                <h3>Honda Motor Scooters</h3>
+                <p>Honda Metropolitan (49cc) - 1 person</p>
+                <p>Honda Dio (110cc) - 2 person</p>
+                <p>Honda PCX150 (149cc) - 2 person</p>
+                <h3>Side-by-Side ATVs</h3>
+                <p>Honda Pioneer 1000 - 4 person</p>
+                <h3>Jeeps</h3>
+                <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+                <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
+            </div>
+            <div class="reservation-box">
+                <h3>Rental Services and Agreements</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+        </div>
         <form action="thankyou.html" method="get">
             <h2>Begin Your Adventure Today!</h2>
             <label for="firstName">First Name:</label>
@@ -43,9 +73,19 @@
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" required>
 
-            <label for="position">Title/Position:</label>
-            <input type="text" id="position" name="position" required pattern="[A-Za-z\-\s]{7,}"
-                title="Please enter at least 7 characters consisting of alphabetic characters, spaces, or hyphens">
+            <label for="rental-type">Rental Type:</label>
+            <select id="rental-type" name="rental-type" required>
+                <option value="">Please Select</option>
+                <option value="~Honda Metro Scooter">~Honda Metro Scooter</option>
+                <option value="~Honda Dio Scooter">~Honda Dio Scooter</option>
+                <option value="~Honda PCX150 Scooter">~Honda PCX150 Scooter</option>
+                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+            </select>
+
+            <label for="date">Date of Rental:</label>
+            <input type="date" id="date" name="date" required value="2024-04-08" min="2024-04-08" max="2025-12-31" >
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="example@example.com">
@@ -53,48 +93,19 @@
             <label for="phone">Mobile Phone:</label>
             <input type="tel" id="phone" name="phone" required>
 
-            <label for="organization">Organization Name:</label>
-            <input type="text" id="organization" name="organization" required>
+            <label for="homeland">Home State/Country:</label>
+            <input type="text" id="homeland" name="homeland" required>
 
-            <label for="membership">Membership Level:</label>
-            <select id="membership" name="membership" required>
-                <option value="">Please Select</option>
-                <option value="NP Membership">NP Membership</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-            </select>
+            <label for="cruise">Cruise Line(if applicable):</label>
+            <input type="text" id="cruise" name="cruise">
 
-            <label for="description">Organization Description:</label>
-            <textarea id="description" name="description"></textarea>
+            <label for="comments">Special Accomodations/Comments:</label>
+            <textarea id="description" name="comments" placeholder="Special needs, location for a drop-off, etc."></textarea>
 
             <input type="hidden" id="timestamp" name="timestamp">
 
-            <button type="submit">Join the Chamber!</button>
+            <button type="submit">RESERVE NOW!</button>
         </form>
-
-        <div class="membership-benefits">
-            <div class="membership-box">
-                <h3>NP Membership</h3>
-                <p>NP Membership is designed for non-profit organizations. It offers basic benefits and does not include any
-                    membership fee.</p>
-            </div>
-            <div class="membership-box">
-                <h3>Bronze Membership</h3>
-                <p>Bronze Membership provides increased benefits at a modest cost. It includes access to special events,
-                    training sessions, and advertising opportunities.</p>
-            </div>
-            <div class="membership-box">
-                <h3>Silver Membership</h3>
-                <p>Silver Membership offers additional benefits compared to Bronze Membership. It includes event discounts,
-                    priority support, and enhanced advertising options.</p>
-            </div>
-            <div class="membership-box">
-                <h3>Gold Membership</h3>
-                <p>Gold Membership is our premium offering, providing exclusive features and benefits. It includes VIP access to
-                    events, personalized support, and top-tier advertising opportunities.</p>
-            </div>
-        </div>
     </main>
 
     <footer>
