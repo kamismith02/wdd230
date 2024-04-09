@@ -1,4 +1,4 @@
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         font-size: 16px;
     }
@@ -16,19 +16,12 @@
         flex: 1 1 100%;
     }
 
-    .index, .rentals, .reservations, .contact {
+    .index,
+    .reservations,
+    .contact {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .rental-images {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: auto;
-        grid-gap: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .rental-images figure {
         margin: 0;
     }
@@ -42,7 +35,7 @@
     .rental-container {
         margin-right: 10px;
     }
-    
+
     footer {
         display: flex;
         justify-content: space-around;

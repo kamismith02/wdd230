@@ -125,7 +125,7 @@ main {
 }
 
 .index h2 {
-    color: #fff;
+    color: #000000;
 }
 
 .call-to-action,
@@ -138,7 +138,7 @@ main {
     margin-bottom: 20px;
     padding: 10px;
     margin: auto;
-    color: #fff;
+    color: #000000;
     background-color: rgba(224, 122, 54, 0.9);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -184,6 +184,10 @@ footer {
 }
 
 /* Rental Page Styles */
+.rental-images img {
+    max-width: 90%;
+}
+
 #rental-container {
     display: grid;
     place-items: center;
@@ -282,7 +286,7 @@ form button:focus {
 
 /*Contact Us Styles*/
 .contact h2 {
-    color: #fff;
+    color: #000000;
 }
 
 .about-us {
