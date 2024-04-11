@@ -14,6 +14,9 @@ body {
     background-color: var(--accent-color);
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1,
@@ -116,6 +119,7 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     text-align: center;
+    flex-grow: 1;
 }
 
 /* Index Page Styles */
@@ -212,6 +216,36 @@ th {
 
 td {
     background-color: rgba(228, 148, 95, 0.897);
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 35%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 5%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 15%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 15%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 15%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 15%;
 }
 
 /* Reservation Page Styles */

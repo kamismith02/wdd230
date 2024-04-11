@@ -27,13 +27,22 @@
     }
 
     .rental-images img {
-        width: 100%;
+        max-width: 500px;
         height: auto;
         border-radius: 8px;
     }
 
     .rental-container {
         margin-right: 10px;
+    }
+
+    .reservation-info {
+        margin-left: 50px;
+    }
+
+    .about-us,
+    .maps {
+        margin-left: 20px;
     }
 
     footer {

@@ -39,8 +39,14 @@
         border-radius: 8px;
     }
 
-    .rental-container {
-        margin-right: 10px;
+    .reservation-info {
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+    }
+
+    .about-us,
+    .maps {
+        margin-left: 35px;
     }
     
     footer {
